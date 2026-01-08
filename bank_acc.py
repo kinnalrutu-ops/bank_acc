@@ -9,4 +9,4 @@ def get_details_info(acc_no, holder_name,type,balance):
         f"balance:{balance}"
     )
 if __name__ == "__main__":
-    print(get_employee_info("012345678","abc","savings",55000))
+    print(get_details_info("012345678","abc","savings",55000))
