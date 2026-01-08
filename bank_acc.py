@@ -1,12 +1,13 @@
-def get_details(Acc_no,holder_name,type,balance):
-    acc_no={Acc_no}
-    Holder_name={holder_name}
-    Type={type}
-    bal={balance}
-    return acc_no,Holder_name,Type,bal
+import sys
 
-Accno,Holder_name,Type,bal=get_details(12345,"John Doe","Savings",1000.50)
-Accno="012384793"
-holder_name="Jane Smith"
-type="savings"
-balance=2500.75
+def get_details_info(acc_no, holder_name,type,balance):
+  
+    return (
+        f"acc_no:{ACC_NO},"
+        f"holder_name:{HOLDER_NAME},"
+        f"Department:{department},"
+        f"Salary:{salary:.2f}"
+    )
+if __name__ == "__main__":
+    print("=== Employee details ===")
+    print(get_employee_info("John Doe","E101","IT",55000))
