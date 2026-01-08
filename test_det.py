@@ -15,4 +15,4 @@ def test_details():
         "balance:55000"
     )
 
-    assert get_bank_info(acc_no, holder_name, type, balance) == expected_output
+    assert get_details_info(acc_no, holder_name, type, balance) == expected_output
