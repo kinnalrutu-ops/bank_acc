@@ -1,9 +1,18 @@
-from bank_acc import get_details
 import pytest
-def test_get_details():
-    Accno,Holder_name,Type,bal=get_details(12345,"John Doe","Savings",1000.50)
-    Accno="012384793"
-    holder_name="Jane Smith" 
-    type="savings"
-    balance=2500.75
-    assert(get_details(Accno,holder_name,type,balance)==({'012384793'},{'Jane Smith'},{'savings'},{2500.75}))
+from bank_acc import get_details_info
+
+def test_details():
+   
+    acc_no = "012345678"
+    holder_name = "E202"
+     type = "HR"
+    balance = 500000
+    
+    expected_output = (
+        "Account No:012345678,"
+        "holder_name:abc,"
+        "type:savings,"
+        "balance:550000.00"
+    )
+
+    assert get_bank_info(acc_no, holder_name, type, balance) == expected_output
